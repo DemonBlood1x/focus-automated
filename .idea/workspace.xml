@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9571e5eb-bf75-4dd5-8819-4f81262ae3c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pages/FocusElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pages/FocusElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pages/GoogleElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pages/GoogleElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/setUp/BrowserSetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/setUp/BrowserSetUp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +43,68 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="TestNG.BrowserSetUp.searchGoogle">
+    <configuration name="BrowserSetUp" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="focus-automated-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="setUp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="setUp" />
+      <option name="MAIN_CLASS_NAME" value="setUp.BrowserSetUp" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BrowserSetUp.clickSearchGoogle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="focus-automated-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="setUp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="setUp" />
+      <option name="MAIN_CLASS_NAME" value="setUp.BrowserSetUp" />
+      <option name="METHOD_NAME" value="clickSearchGoogle" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BrowserSetUp.searchGoogle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="focus-automated-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="setUp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="setUp" />
+      <option name="MAIN_CLASS_NAME" value="setUp.BrowserSetUp" />
+      <option name="METHOD_NAME" value="searchGoogle" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.BrowserSetUp.searchGoogle" />
+        <item itemvalue="TestNG.BrowserSetUp.clickSearchGoogle" />
+        <item itemvalue="TestNG.BrowserSetUp" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
