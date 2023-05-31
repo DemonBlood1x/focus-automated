@@ -1,32 +1,42 @@
 package pages;
 
 import org.openqa.selenium.By;
-import setUp.BrowserSetUp;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import utils.GoogleUtilInterface;
 
 public class GoogleElements {
 
-    public static String SEARCH = "Focus Services";
+    protected WebDriver driver;
     By searchBar = By.id("APjFqb");
-    By searchButton = By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]");
+    By searchButton = By.xpath("//input[contains(@class, 'gNO89b')]");
     By focusHref = By.xpath("//a[contains(@href,'https://www.focusservices.com')]");
+    By nowHiringButton = By.className("avia_iconbox_title");
 
-    public void googleSearchBar() {
-        BrowserSetUp.DRIVER.findElement(searchBar).sendKeys(SEARCH);
+    //Constructor
+    public GoogleElements(WebDriver driver){
+        this.driver=driver;
+    }
+
+    public void searchKeysInGoogle(String keys) {
+        driver.findElement(searchBar).sendKeys(keys);
+        driver.findElement(searchBar).sendKeys(Keys.ESCAPE);
     }
 
     public void googleSearchButton() {
-        BrowserSetUp.DRIVER.findElement(searchButton).click();
+        driver.findElement(searchButton).click();
     }
 
     public String focusUrl() {
-        String url;
-        url = BrowserSetUp.DRIVER.findElement(focusHref).getAttribute("href");
-        return url;
+        return driver.findElement(focusHref).getAttribute("href");
     }
 
     public void focusClick() {
-        BrowserSetUp.DRIVER.findElement(focusHref).click();
+        driver.findElement(focusHref).click();
     }
 
+    public boolean focusNowHiringButton() {
+        return driver.findElement(nowHiringButton).isDisplayed();
+    }
 
 }
