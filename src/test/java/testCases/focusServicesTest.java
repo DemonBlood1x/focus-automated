@@ -9,7 +9,9 @@ import setUp.BrowserSetUp;
 public class focusServicesTest extends FocusElements {
 
     private static final String FOCUS_URL = "https://www.focusservices.com/";
-    private String value = "https://www.focusservices.com/locations/#north-america";
+    private String linkUSA = "https://www.focusservices.com/locations/#north-america";
+    private String title = "El Salvador & Nicaragua";
+    private String asiaText = "Bacolod City, Philippines";
 
     @Test
     public void searchFocusServices() {
@@ -18,8 +20,11 @@ public class focusServicesTest extends FocusElements {
 
         Assert.assertTrue(focusNowHiringButton());
         clickOnLocationTab();
-        Assert.assertEquals(value, locateNorthAmerica());
+        Assert.assertEquals(linkUSA, locateNorthAmerica());
         clickOnCenterAmerica();
+        Assert.assertEquals(title, obtainTitle_SV_NC());
+        clickOnAsia();
+        Assert.assertEquals(asiaText, obtainAsiaTextBlock());
     }
 
 }

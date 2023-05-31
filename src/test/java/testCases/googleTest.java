@@ -8,7 +8,7 @@ import setUp.BrowserSetUp;
 
 public class googleTest extends GoogleElements {
     private static final String BASE_URL = "https://www.google.com/";
-    private String value = "https://www.focusservices.com/";
+    private String linkFocus = "https://www.focusservices.com/";
 
     @Test
     public void searchGoogle() {
@@ -17,7 +17,7 @@ public class googleTest extends GoogleElements {
 
         googleSearchBar();
         googleSearchButton();
-        Assert.assertEquals(value, focusUrl());
+        Assert.assertEquals(linkFocus, focusUrl());
         focusClick();
 
         JavascriptExecutor js = (JavascriptExecutor) BrowserSetUp.DRIVER;
