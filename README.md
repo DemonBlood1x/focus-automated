@@ -13,7 +13,7 @@ This guide will walk you through running a Maven project with two test cases wri
 Before you begin, you'll need the following:
 
 * Java 8 or later
-* Maven 3+ 
+* Maven 
 * A project containing Java test cases
 
 ## Steps
