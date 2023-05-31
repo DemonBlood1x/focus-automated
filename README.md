@@ -1,8 +1,23 @@
-# focus-automated
-The project was created as a challenge for Focus Company.
-
 # Automated Project with JAVA, Selenium, and Maven
 This project has been created to automate a web application using JAVA, Seleniumand and Maven.
+
+# Test Matrix
+| Step | Description | Expectation |
+|---|---|---|
+|1| Open Chrome Browser.|Browser opened|
+|2| Go to www.google.com |Google landing page opened|
+|3| Type in Google’s search “Focus Services” |Focus Services search displayed|
+|4| Click on “Search button” |Focus Services page displayed|
+|5| Verify the https://www.focusservices.com URL exists in the search|https://www.focusservices.com URL exists in the search|
+|6| Click on that page|Focus Services page opened|
+|7|Scroll down to the bottom of the page| Footer page displayed|
+|8|Verify the “Now Hiring” button exists into this page|Now Hiring button displayed|
+|9|Click on “Locations” Tab|Locations page displayed|
+|10|Locate North America Link. Do an assert on this link. | North America link displayed|
+|11|Click on Central America location.| Central America page displayed|
+|12| Validate “El Salvador &amp; Nicaragua” title is displayed on the page. | El Salvador & Nicaragua title displayed| 
+|13| Click on Asia Location.|Asia Page displayed|
+|14|Verify if exist the “Bacolod City, Philippines” text block|The “Bacolod City, Philippines” text block exists in the page.|
 
 # Run a Maven Project
 
