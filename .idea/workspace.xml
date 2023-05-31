@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="9571e5eb-bf75-4dd5-8819-4f81262ae3c3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/focusServicesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCases/FocusServicesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/googleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCases/GoogleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/GoogleElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/GoogleElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/setUp/BrowserSetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/setUp/BrowserSetUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/FocusServicesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCases/FocusServicesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/GoogleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCases/GoogleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/FocusServicesUtilInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/FocusServicesUtilInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/GoogleUtilInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/GoogleUtilInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -27,6 +32,13 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2QWJ7BWPqGNM4GFvKYR3yyUNwmw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -41,26 +53,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.GoogleTest.searchGoogle">
-    <configuration name="BrowserSetUp.searchGoogle" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="focus-automated-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="setUp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="setUp" />
-      <option name="MAIN_CLASS_NAME" value="setUp.BrowserSetUp" />
-      <option name="METHOD_NAME" value="searchGoogle" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FocusServicesTest.searchFocusServices" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.GoogleTest">
+    <configuration name="FocusServicesTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="focus-automated-project" />
       <extension name="coverage">
         <pattern>
@@ -70,7 +64,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="testCases" />
       <option name="MAIN_CLASS_NAME" value="testCases.FocusServicesTest" />
-      <option name="METHOD_NAME" value="searchFocusServices" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FocusServicesTest.verifyAsiaTextBlock" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="focus-automated-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testCases" />
+      <option name="MAIN_CLASS_NAME" value="testCases.FocusServicesTest" />
+      <option name="METHOD_NAME" value="verifyAsiaTextBlock" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -78,7 +89,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoogleTest.searchGoogle" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FocusServicesTest.verifyNowHiringButton" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="focus-automated-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testCases" />
+      <option name="MAIN_CLASS_NAME" value="testCases.FocusServicesTest" />
+      <option name="METHOD_NAME" value="verifyNowHiringButton" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoogleTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="focus-automated-project" />
       <extension name="coverage">
         <pattern>
@@ -88,15 +117,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="testCases" />
       <option name="MAIN_CLASS_NAME" value="testCases.GoogleTest" />
-      <option name="METHOD_NAME" value="searchGoogle" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="focusServicesTest.searchFocusServices" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoogleTest.verifyFocusUrl" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="focus-automated-project" />
       <extension name="coverage">
         <pattern>
@@ -105,26 +133,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testCases" />
-      <option name="MAIN_CLASS_NAME" value="testCases.focusServicesTest" />
-      <option name="METHOD_NAME" value="searchFocusServices" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="googleTest.searchGoogle" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="focus-automated-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testCases" />
-      <option name="MAIN_CLASS_NAME" value="testCases.googleTest" />
-      <option name="METHOD_NAME" value="searchGoogle" />
+      <option name="MAIN_CLASS_NAME" value="testCases.GoogleTest" />
+      <option name="METHOD_NAME" value="verifyFocusUrl" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -134,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GoogleTest.searchGoogle" />
-        <item itemvalue="TestNG.FocusServicesTest.searchFocusServices" />
-        <item itemvalue="TestNG.focusServicesTest.searchFocusServices" />
-        <item itemvalue="TestNG.googleTest.searchGoogle" />
-        <item itemvalue="TestNG.BrowserSetUp.searchGoogle" />
+        <item itemvalue="TestNG.GoogleTest" />
+        <item itemvalue="TestNG.GoogleTest.verifyFocusUrl" />
+        <item itemvalue="TestNG.FocusServicesTest" />
+        <item itemvalue="TestNG.FocusServicesTest.verifyAsiaTextBlock" />
+        <item itemvalue="TestNG.FocusServicesTest.verifyNowHiringButton" />
       </list>
     </recent_temporary>
   </component>
