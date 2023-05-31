@@ -47,4 +47,4 @@ Before you begin, you'll need the following:
 
 ## Conclusion
 
-You have now successfully run a Maven project with two Java test cases using the `mvn clean test` command.
+You have now successfully run a Maven project with e2e Java test cases using the `mvn clean test` command.
