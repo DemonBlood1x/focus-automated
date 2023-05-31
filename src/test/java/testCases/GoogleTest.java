@@ -5,10 +5,9 @@ import pages.GoogleElements;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import setUp.BrowserSetUp;
+import utils.GoogleUtilInterface;
 
-public class googleTest extends GoogleElements {
-    private static final String BASE_URL = "https://www.google.com/";
-    private String linkFocus = "https://www.focusservices.com/";
+public class GoogleTest extends GoogleElements implements GoogleUtilInterface {
 
     @Test
     public void searchGoogle() {
@@ -17,7 +16,7 @@ public class googleTest extends GoogleElements {
 
         googleSearchBar();
         googleSearchButton();
-        Assert.assertEquals(linkFocus, focusUrl());
+        Assert.assertEquals(LINK_FOCUS, focusUrl());
         focusClick();
 
         JavascriptExecutor js = (JavascriptExecutor) BrowserSetUp.DRIVER;
