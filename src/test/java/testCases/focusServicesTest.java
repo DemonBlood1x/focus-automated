@@ -9,14 +9,17 @@ import setUp.BrowserSetUp;
 public class focusServicesTest extends FocusElements {
 
     private static final String FOCUS_URL = "https://www.focusservices.com/";
+    private String value = "https://www.focusservices.com/locations/#north-america";
 
     @Test
     public void searchFocusServices() {
         BrowserSetUp setUp = new BrowserSetUp();
         setUp.browserSetUp(FOCUS_URL);
 
-        //Assert.assertTrue(focusNowHiringButton());
+        Assert.assertTrue(focusNowHiringButton());
         clickOnLocationTab();
+        Assert.assertEquals(value, locateNorthAmerica());
+        clickOnCenterAmerica();
     }
 
 }

@@ -22,7 +22,6 @@ public class GoogleElements {
     public String focusUrl() {
         String url;
         url = BrowserSetUp.DRIVER.findElement(focusHref).getAttribute("href");
-
         return url;
     }
 

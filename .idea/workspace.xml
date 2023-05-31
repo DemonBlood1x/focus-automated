@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9571e5eb-bf75-4dd5-8819-4f81262ae3c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/FocusElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/log/Slf4j_log.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pages/FocusElements.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pages/GoogleElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/GoogleElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/setUp/BrowserSetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/setUp/BrowserSetUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/FocusElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/FocusElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/GoogleElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/GoogleElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/focusServicesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCases/focusServicesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
