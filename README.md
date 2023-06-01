@@ -45,7 +45,11 @@ This command installs the project into the local repository.
 
 4. Open a command-line window, navigate to the project directory, and run the following command:
 
+        # Run all the unit test classes.
         mvn clean test
+        
+        # Run a single test class.
+        mvn -Dtest=FocusTestSuite test
 
 5. The build should generate a test report, which you can find under the **target/surefire-reports** folder. 
 
