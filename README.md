@@ -1,5 +1,5 @@
 # Automated Project with JAVA, Selenium, and Maven
-This project has been created to automate a web application using JAVA, Seleniumand and Maven.
+This project has been created to automate a web application using JAVA, Selenium and Maven.
 
 # Test Matrix
 | Step | Description | Expectation |
@@ -37,13 +37,19 @@ Before you begin, you'll need the following:
 
 2. Open the project in your IDE and set the `JAVA_HOME` environment variable to its installation directory.
 
-3. Open a command-line window, navigate to the project directory, and run the following command:
+3. Open a command-line window, navigate to the project directory, and run the folowing command:
+        
+        mvn clean install
+        
+This command installs the project into the local repository.
+
+4. Open a command-line window, navigate to the project directory, and run the following command:
 
         mvn clean test
 
-4. The build should generate a test report, which you can find under the **target/surefire-reports** folder. 
+5. The build should generate a test report, which you can find under the **target/surefire-reports** folder. 
 
-5. Open the report and check the results of the test cases.
+6. Open the report and check the results of the test cases.
 
 ## Conclusion
 
