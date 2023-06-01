@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9571e5eb-bf75-4dd5-8819-4f81262ae3c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/conf/ExpectedValues.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/conf/TestConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/FocusTestSuite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/actions/FocusPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/actions/FocusPageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/actions/GooglePageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/actions/GooglePageActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/FocusElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/FocusElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/GoogleElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/GoogleElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/FocusTestRun.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/GoogleTestRun.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/FocusServicesUtilInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/GoogleUtilInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/FocusTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/FocusTestSuite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +43,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="TestNG.FocusTestSuite">
     <configuration name="FocusTestSuite" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="focus-automated-project" />

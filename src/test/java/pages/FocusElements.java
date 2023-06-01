@@ -17,6 +17,7 @@ public class FocusElements {
     By getTitle_SV_NC = By.xpath("//*[@id='av-tab-section-1']/div/div[2]/div[2]/div/div/section/div/h2");
     By asiaLink = By.xpath("//*[@id='av-tab-section-1']/div/div[1]/a[3]");
     By asiaTextBlock = By.xpath("//*[@id='av-tab-section-1']/div/div[2]/div[3]/div/div/div[2]/section/div/h3/b");
+    final int TEN_SECONDS = 10;
 
     //Constructor
     public FocusElements(WebDriver driver){
@@ -24,38 +25,34 @@ public class FocusElements {
     }
 
     public void clickOnLocationTab() {
-        WebElement clickLocationTab = getWait().until(ExpectedConditions.elementToBeClickable(locationTab));
+        WebElement clickLocationTab = waitForWebElement(locationTab, TEN_SECONDS);
         clickLocationTab.click();
     }
 
     public String getNorthAmericaUrl(String hrfe) {
-        WebElement link = getWait().until(ExpectedConditions.elementToBeClickable(northAmericaLink));
-        return link.getAttribute(hrfe);
+        return driver.findElement(northAmericaLink).getAttribute(hrfe);
     }
 
     public void clickOnCenterAmerica() {
-        WebElement clickCenterAmerica = getWait().until(ExpectedConditions.elementToBeClickable(centerAmericaLink));
+        WebElement clickCenterAmerica = waitForWebElement(centerAmericaLink, TEN_SECONDS);
         clickCenterAmerica.click();
     }
 
     public String getTitleSvNc() {
-        WebElement title = getWait().until(ExpectedConditions.elementToBeClickable(getTitle_SV_NC));
-        return title.getText();
+        return driver.findElement(getTitle_SV_NC).getText();
     }
 
     public void clickOnAsia() {
-        WebElement clickAsia = getWait().until(ExpectedConditions.elementToBeClickable(asiaLink));
+        WebElement clickAsia = waitForWebElement(asiaLink, TEN_SECONDS);
         clickAsia.click();
     }
 
     public String getAsiaTextBlock() {
-        WebElement asiaText = getWait().until(ExpectedConditions.elementToBeClickable(asiaTextBlock));
-        return asiaText.getText();
+        return driver.findElement(asiaTextBlock).getText();
     }
 
-    public WebDriverWait getWait() {
-        return new WebDriverWait(driver, Duration.ofSeconds(10)); // 10-second explicit wait
+    private WebElement waitForWebElement(By byElement, int seconds){
+        return new WebDriverWait(driver, Duration.ofSeconds(seconds)).until(ExpectedConditions.elementToBeClickable(byElement));
     }
-
 
 }

@@ -16,33 +16,33 @@ public class GoogleElements {
     By focusHref = By.xpath("//a[contains(@href,'https://www.focusservices.com')]");
     By nowHiringButton = By.className("avia_iconbox_title");
 
+    final int TEN_SECONDS = 10;
+
     public GoogleElements(WebDriver driver) {
        this.driver = driver;
     }
 
     public void sendKeysOnSearchBar(String keys) {
-        WebElement search = getWait().until(ExpectedConditions.elementToBeClickable(searchBar));
-        search.sendKeys(keys);
+        driver.findElement(searchBar).sendKeys(keys);
         driver.findElement(searchBar).sendKeys(Keys.ESCAPE);
     }
 
     public void clickOnSearchBtn() {
-        WebElement clickSearchBtn = getWait().until(ExpectedConditions.elementToBeClickable(searchButton));
+        WebElement clickSearchBtn = waitForWebElement(searchButton, TEN_SECONDS);
         clickSearchBtn.click();
     }
 
     public String getFocusUrl() {
-        WebElement focusSiteUrl = getWait().until(ExpectedConditions.elementToBeClickable(focusHref));
-        return focusSiteUrl.getAttribute("href");
+        return driver.findElement(focusHref).getAttribute("href");
     }
 
     public void clickOnFocusUrl() {
-        WebElement clickFocusUrl = getWait().until(ExpectedConditions.elementToBeClickable(focusHref));
+        WebElement clickFocusUrl = waitForWebElement(focusHref, TEN_SECONDS);
         clickFocusUrl.click();
     }
 
     public boolean getNowHiringBtn() {
-        WebElement nowHiringBtn = getWait().until(ExpectedConditions.elementToBeClickable(nowHiringButton));
+        WebElement nowHiringBtn = waitForWebElement(nowHiringButton, TEN_SECONDS);
         return nowHiringBtn.isDisplayed();
     }
 
@@ -51,8 +51,8 @@ public class GoogleElements {
         js.executeScript(ExpectedValues.SCROLL_DOWN);
     }
 
-    public WebDriverWait getWait() {
-        return new WebDriverWait(driver, Duration.ofSeconds(10)); // 10-second explicit wait
+    private WebElement waitForWebElement(By byElement, int seconds){
+        return new WebDriverWait(driver, Duration.ofSeconds(seconds)).until(ExpectedConditions.elementToBeClickable(byElement));
     }
 
 }
