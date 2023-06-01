@@ -1,30 +1,32 @@
 package actions;
 
+import conf.ExpectedValues;
 import org.openqa.selenium.WebDriver;
 import pages.FocusElements;
 
 public class FocusPageActions {
 
-    static FocusElements elements;
+    FocusElements elements;
 
-    static public String locateNorthAmericaAction(WebDriver driver) {
-        elements = new FocusElements(driver);
-        elements.clickOnLocationTab();
-        return elements.locateNorthAmerica();
+    public FocusPageActions(WebDriver driver) {
+        this.elements = new FocusElements(driver);
     }
 
-    static public String obtainTitleSvNcAction(WebDriver driver) {
-        elements = new FocusElements(driver);
+     public String locateNorthAmericaAction() {
+        elements.clickOnLocationTab();
+        return elements.getNorthAmericaUrl(ExpectedValues.HREF);
+    }
+
+     public String getTitleSvNcAction() {
         elements.clickOnLocationTab();
         elements.clickOnCenterAmerica();
-        return elements.obtainTitle_SV_NC();
+        return elements.getTitleSvNc();
     }
 
-    static public String obtainAsiaTextBlockAction(WebDriver driver) {
-        elements = new FocusElements(driver);
+     public String getAsiaTextBlockAction() {
         elements.clickOnLocationTab();
         elements.clickOnAsia();
-        return elements.obtainAsiaTextBlock();
+        return elements.getAsiaTextBlock();
     }
 
 }

@@ -5,17 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9571e5eb-bf75-4dd5-8819-4f81262ae3c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/actions/FocusPageActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/actions/GooglePageActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testCases/GoogleTestRun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/conf/ExpectedValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/conf/TestConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/FocusTestSuite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/actions/FocusPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/actions/FocusPageActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/actions/GooglePageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/actions/GooglePageActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/FocusElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/FocusElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/GoogleElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/GoogleElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/setUp/BrowserSetUp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/FocusServicesTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/GoogleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/FocusServicesUtilInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/FocusServicesUtilInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/GoogleUtilInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/GoogleUtilInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/FocusTestRun.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/GoogleTestRun.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/FocusServicesUtilInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/GoogleUtilInterface.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,18 +59,35 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.FocusTestRun.verifyCentralAmericaTextBlock">
-    <configuration name="FocusTestRun.verifyCentralAmericaTextBlock" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.FocusTestSuite">
+    <configuration name="FocusTestSuite" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="focus-automated-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testCases.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testCases" />
-      <option name="MAIN_CLASS_NAME" value="testCases.FocusTestRun" />
-      <option name="METHOD_NAME" value="verifyCentralAmericaTextBlock" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.FocusTestSuite" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FocusTestSuite.verifyAsiaTextBlock" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="focus-automated-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.FocusTestSuite" />
+      <option name="METHOD_NAME" value="verifyAsiaTextBlock" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -75,17 +95,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FocusTestRun.verifyNorthAmericaLink" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FocusTestSuite.verifyNowHiringButton" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="focus-automated-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testCases.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testCases" />
-      <option name="MAIN_CLASS_NAME" value="testCases.FocusTestRun" />
-      <option name="METHOD_NAME" value="verifyNorthAmericaLink" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.FocusTestSuite" />
+      <option name="METHOD_NAME" value="verifyNowHiringButton" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -97,31 +117,13 @@
       <module name="focus-automated-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testCases.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="googleSetUp" />
+      <option name="PACKAGE_NAME" value="testCases" />
       <option name="MAIN_CLASS_NAME" value="testCases.GoogleTestRun" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GoogleTestRun.verifyFocusUrl" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="focus-automated-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="googleSetUp" />
-      <option name="MAIN_CLASS_NAME" value="testCases.GoogleTestRun" />
-      <option name="METHOD_NAME" value="verifyFocusUrl" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -132,11 +134,11 @@
       <module name="focus-automated-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testCases.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="googleSetUp" />
+      <option name="PACKAGE_NAME" value="testCases" />
       <option name="MAIN_CLASS_NAME" value="testCases.GoogleTestRun" />
       <option name="METHOD_NAME" value="verifyNowHiringButton" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -148,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FocusTestRun.verifyCentralAmericaTextBlock" />
-        <item itemvalue="TestNG.FocusTestRun.verifyNorthAmericaLink" />
-        <item itemvalue="TestNG.GoogleTestRun.verifyNowHiringButton" />
+        <item itemvalue="TestNG.FocusTestSuite" />
+        <item itemvalue="TestNG.FocusTestSuite.verifyAsiaTextBlock" />
+        <item itemvalue="TestNG.FocusTestSuite.verifyNowHiringButton" />
         <item itemvalue="TestNG.GoogleTestRun" />
-        <item itemvalue="TestNG.GoogleTestRun.verifyFocusUrl" />
+        <item itemvalue="TestNG.GoogleTestRun.verifyNowHiringButton" />
       </list>
     </recent_temporary>
   </component>

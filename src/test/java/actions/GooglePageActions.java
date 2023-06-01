@@ -1,30 +1,29 @@
 package actions;
 
-import org.openqa.selenium.JavascriptExecutor;
+import conf.ExpectedValues;
 import org.openqa.selenium.WebDriver;
 import pages.GoogleElements;
-import utils.GoogleUtilInterface;
 
 public class GooglePageActions {
 
-    static GoogleElements elements;
-    static JavascriptExecutor js;
+    GoogleElements elements;
 
-     static public String obtainFocusUrlAction(WebDriver driver) {
+    public GooglePageActions (WebDriver driver) {
         elements = new GoogleElements(driver);
-        elements.searchKeysInGoogle(GoogleUtilInterface.SEARCH);
-        elements.googleSearchButton();
-        return elements.focusUrl();
     }
 
-    static public boolean locateNowHiringButtonAction(WebDriver driver) {
-         elements = new GoogleElements(driver);
-         elements.searchKeysInGoogle(GoogleUtilInterface.SEARCH);
-         elements.googleSearchButton();
-         elements.focusClick();
-         js = (JavascriptExecutor) driver;
-         js.executeScript(GoogleUtilInterface.SCROLL_DOWN);
-         return elements.focusNowHiringButton();
+    public String getFocusUrlAction() {
+        elements.sendKeysOnSearchBar(ExpectedValues.SEARCH);
+        elements.clickOnSearchBtn();
+        return elements.getFocusUrl();
+    }
+
+    public boolean locateNowHiringButtonAction() {
+         elements.sendKeysOnSearchBar(ExpectedValues.SEARCH);
+         elements.clickOnSearchBtn();
+         elements.clickOnFocusUrl();
+         elements.pageScrollDown();
+         return elements.getNowHiringBtn();
     }
 
 }
