@@ -1,8 +1,8 @@
-Browser\ChromeBrowser.class
-testCases\GoogleTestRun.class
 pages\FocusElements.class
 pages\GoogleElements.class
+conf\TestConfiguration.class
+conf\ChromeBrowser.class
 actions\GooglePageActions.class
-testCases\FocusTestRun.class
 actions\FocusPageActions.class
-utils\UtilComponentInterface.class
+conf\ExpectedValues.class
+tests\TestFocusSuite.class
